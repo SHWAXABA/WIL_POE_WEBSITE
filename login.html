@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <!--Link to css-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--Box Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <!--Navbar-->
+    <header>
+      <div class="nav container">
+        <!--Logo-->
+        <a href="Index.html" class="logo"
+          ><i class="bx bx-home"></i>Ethekwini</a
+        >
+
+        <!--Log In Button-->
+        <a href="sign-up.html" class="btn">Sign Up</a>
+      </div>
+    </header>
+    <!--Log In-->
+    <div class="login container">
+      <div class="login-container">
+        <h2>Login To Continue</h2>
+        <p>
+          Login with your data that you entered<br />during your registration
+        </p>
+        <!--Login Form-->
+        <form onsubmit="login(); return false;">
+          <span>Enter your email address</span>
+          <input
+            type="email"
+            name="userEmail"
+            id="userEmail"
+            placeholder="yourmail@gmail.com"
+            required
+          />
+          <span>Enter your password</span>
+          <input
+            type="password"
+            name="userPassword"
+            id="userPassword"
+            placeholder="Password"
+            required
+          />
+          <input type="submit" value="Log In" class="button" />
+          <a href="#">Forgot Password?</a>
+        </form>
+        <a href="sign-up.html" class="btn">Sign up now</a>
+      </div>
+      <!--Log in Image-->
+      <div class="login-image">
+        <img src="img/login.jpg" alt="" />
+      </div>
+    </div>
+
+    <section class="footer">
+      <div class="footer-container container">
+        <h2>Ethekwini</h2>
+        <div class="footer-box">
+          <h3>Quick Links</h3>
+          <a href="#">Educational Programs</a>
+          <a href="#">Exhibits and Collections</a>
+          <a href="#">Visitor Information</a>
+        </div>
+        <div class="footer-box">
+          <h3>Locations</h3>
+          <a href="./museummap.html">Durban</a>
+          <a href="./museummap.html">1st Avenue</a>
+          <a href="./museummap.html">Central Durban</a>
+        </div>
+        <div class="footer-box">
+          <h3>Contact</h3>
+          <a href="tel:0313112256">(031) 311 2256</a>
+          <p>
+            <a href="mailto:NSM.Frontdesk@durban.gov.za"
+              >NSM.Frontdesk@durban.gov.za</a
+            >
+          </p>
+          <div class="social">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Copyright-->
+    <div class="copyright">
+      <p>&#169; Durban NatScience Museum All Right Reserved</p>
+    </div>
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+
+  <script src="register.js"></script>
+</html>
